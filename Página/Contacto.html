@@ -1,11 +1,286 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
+    <title>Contacto</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+
+
+
+
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #c9ccff;
+        }
+
+
+
+
+
+
+
+        /* CABECERA */
+        header {
+            background-color: #c9ccff;
+            padding: 20px 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+
+
+
+
+
+
+            nav a {
+                position: relative;
+                color: white;
+                text-decoration: none;
+                margin-left: 25px;
+                font-size: 14px;
+            }
+
+            
+            nav a:visited {
+                color: white;
+            }
+
+            
+            nav a::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -6px;
+                width: 0;
+                height: 2px;
+                background-color: white;
+                transition: width 0.3s ease;
+            }
+
+            
+            nav a:hover {
+                opacity: 0.8;
+            }
+
+            nav a:hover::after {
+                width: 100%;
+            }
+
+            
+            nav a.active::after {
+                width: 100%;
+            }
+
+
+
+
+
+
+
+
+        .logo img {
+           height: 40px;
+            width: auto;
+                    }
+
+
+
+
+
+
+
+
+        /* PRINCIPAL */
+        main {
+            background-color: white;
+            padding: 80px 60px;
+        }
+
+        main h1 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        main h2 {
+            text-align: center;
+            font-size: 16px;
+            font-weight: normal;
+            margin-bottom: 20px;
+        }
+
+        main p {
+            text-align: center;
+            font-size: 14px;
+            color: #555;
+            max-width: 700px;
+            margin: 0 auto 60px;
+        }
+
+
+
+
+        /* CONTACTO */
+        .contact-container {
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+            align-items: stretch;
+        }
+
+        .form-box {
+            background-color: #c9ccff;
+            padding: 30px;
+            border-radius: 12px;
+            width: 350px;
+        }
+
+        .form-box label {
+            font-size: 12px;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-box input,
+        .form-box textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+
+        .form-box textarea {
+            resize: none;
+            height: 100px;
+        }
+
+        .form-box button {
+            background-color: #9a9a9a;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .image-box {
+            width: 400px;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+
+
+
+
+
+
+        /* PIE */
+        footer {
+            background-color: #c9ccff;
+            padding: 40px 60px;
+            display: flex;
+            justify-content: space-between;
+            color: white;
+        }
+
+        footer p {
+            font-size: 13px;
+        }
+    </style>
 </head>
+
+
+
+
+
+
+
 <body>
+
+    <!-- HEADER -->
+    <header>
+
+        <div class="logo">
+            <img src="Imágenes/Logo.png" alt="Logo">
+        </div>
+
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="Nuestros_Proyectos.html">Nuestros Proyectos</a>
+            <a href="Terrenos.html">Terrenos</a>
+            <a href="Sobre_Nosotros.html">Sobre Nosotros</a>
+            <a href="Contacto.html" class="active">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <h1>Contáctanos</h1>
+        <h2>Si quieres conocer más sobre nuestra propuesta o estás interesado en la compra de un terreno, estaremos encantados de ayudarte.</h2>
+        <p>
+            Queremos que tengas toda la información que necesites para tomar la mejor decisión,
+            por eso ponemos a tu disposición nuestro correo electrónico.
+            Escríbenos con tus dudas, consultas o comentarios, y te responderemos a la brevedad
+            con la atención que mereces.
+        </p>
+
+        <div class="contact-container">
+            <div class="form-box">
+                <label>Nombre</label>
+                <input type="text" placeholder="Ingresa tu nombre">
+
+                <label>Correo electrónico*</label>
+                <input type="email" placeholder="Ingresa tu correo electrónico">
+
+                <label>Mensaje*</label>
+                <textarea placeholder="Escribe tu mensaje aquí"></textarea>
+
+                <button>Enviar correo</button>
+            </div>
+
+            <div class="image-box">
+                <img src="Imágenes/Edificio1.jpg" alt="Edificio">
+            </div>
+        </div>
+    </main>
+
+
+
     
+    <!-- FOOTER -->
+    <footer>
+        <div>
+            <p><strong>Sistems Inc</strong></p>
+            <p>Innovación en proyectos de construcción moderna.</p>
+        </div>
+
+        <div>
+            <p><strong>Contacto</strong></p>
+            <p>Teléfono:</p>
+            <p>+15 5970-4647</p>
+        </div>
+    </footer>
+
 </body>
 </html>
