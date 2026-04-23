@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nuestros Proyectos</title>
+<link rel="icon" href="Documentos/Varios/Logo.png" type="image/png">
+<link rel="stylesheet" href="styles.css">
+
+<style>
+
+.project-text{
+    margin-top:25px;
+    max-width:1200px;
+    line-height:1.6;
+    font-size:15px;
+    color:#333;
+}
+
+/* GALERÍA ANCHA */
+.gallery-section{
+    padding:0 20px;
+}
+
+@media(min-width:900px){
+    .gallery-section{
+        width:90%;
+        max-width:1400px;
+        margin:auto;
+    }
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+/* HEADER */
+
+header{
+    background:#A8ADFF;
+    padding:20px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo img{
+    height:40px;
+    transition:0.3s;
+}
+
+.logo img:hover{
+    transform:scale(1.4);
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-size:14px;
+    position:relative;
+}
+
+nav a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    width:0;
+    height:2px;
+    background:white;
+    transition:0.3s;
+}
+
+nav a:hover::after{
+    width:100%;
+}
+
+/* MODAL */
+
+.image-modal{
+    display:none;
+    position:fixed;
+    z-index:1000;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.85);
+    justify-content:center;
+    align-items:center;
+}
+
+.image-modal img{
+    max-width:80%;
+    max-height:80%;
+    border-radius:15px;
+    animation:zoomIn 0.3s ease;
+}
+
+.close-btn{
+    position:absolute;
+    top:30px;
+    right:40px;
+    color:white;
+    font-size:40px;
+    cursor:pointer;
+}
+
+@keyframes zoomIn{
+    from{ transform:scale(0.7); opacity:0; }
+    to{ transform:scale(1); opacity:1; }
+}
+
+/* GALERÍA */
+
+.gallery-section{
+    margin-bottom:80px;
+}
+
+.gallery-section h2{
+    margin-bottom:20px;
+    font-size:22px;
+}
+
+.horizontal-gallery{
+    display:flex;
+    gap:20px;
+    overflow-x:auto;
+    padding-bottom:15px;
+    overflow-y:hidden;
+}
+
+/* ESTADO OCULTO */
+.horizontal-gallery img{
+    height:200px;
+    border-radius:15px;
+    cursor:pointer;
+    transition: transform 0.3s ease, opacity 0.8s ease;
+
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+/* cuando entra en pantalla */
+.horizontal-gallery img.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+/* hover */
+.horizontal-gallery img:hover{
+    transform: scale(1.05);
+}
+
+
+
+/* SCROLL BAR */
+
+.horizontal-gallery::-webkit-scrollbar{
+    height:8px;
+}
+
+.horizontal-gallery::-webkit-scrollbar-track{
+    background:#c9ccff;
+}
+
+.horizontal-gallery::-webkit-scrollbar-thumb{
+    background:#A8ADFF;
+    border-radius:10px;
+}
+
+/* MAPA */
+
+.map-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-top:60px;
+    padding:0 20px;
+}
+
+.map-container iframe{
+    width:100%;
+    max-width:1000px;
+    height:500px;
+    border-radius:15px;
+}
+
+/* FOOTER */
+
+footer p{
+    font-size:13px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        gap:20px;
+        padding:20px;
+    }
+
+    nav{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+
+    main{
+        padding:30px 20px;
+    }
+
+    footer{
+        flex-direction:column;
+        gap:20px;
+        text-align:center;
+        padding:30px 20px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+
+    <div class="logo">
+        <a href="index.html">
+            <img src="Documentos/Varios/Logo.png" alt="Logo">
+        </a>
+    </div>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="Nuestros_Proyectos.html" style="pointer-events:none;">Nuestros Proyectos</a>
+        <a href="Sobre_Nosotros.html">Sobre Nosotros</a>
+        <a href="Contacto.html">Contacto</a>
+    </nav>
+
+</header>
+
+<!-- MAIN -->
+<main>
+    
+    
+    
+<!-- PROYECTO EJEMPLO
+
+<div class="gallery-section">
+
+    <h2>X - Nombre del Proyecto</h2>
+
+    <div class="horizontal-gallery">
+        <img src="X/X/X1.jpg">
+        <img src="X/X/X2.jpg">
+        <img src="X/X/X3.jpg">
+    </div>
+
+    <p class="project-text">
+        X descripción del proyecto...
+    </p>
+
+    <a href="X/X/X.pdf" download class="btn-pdf">
+        Descargar plano en PDF
+    </a>
+
+<div class="map-container">
+    <iframe X </iframe>
+</div>
+
+<p style="margin-bottom: 200px;"></p>
+
+</div>
+
+-->
+    
+<br>
+<!-- PROYECTO 1 -->
+
+<div class="gallery-section">
+
+    <h2>Tigre - Montes de Oca 780</h2>
+
+    <div class="horizontal-gallery">
+        <img src="Documentos/Proyectos/Proyecto1/1.jpg">
+        <img src="Documentos/Proyectos/Proyecto1/2.jpg">
+        <img src="Documentos/Proyectos/Proyecto1/3.jpg">
+        <img src="Documentos/Proyectos/Proyecto1/4.jpg">
+        <img src="Documentos/Proyectos/Proyecto1/5.jpg">
+    </div>
+
+    <p class="project-text">
+        Este desarrollo residencial está ubicado en una zona estratégica de Tigre, combinando diseño contemporáneo, funcionalidad y una excelente calidad constructiva.
+
+        El edificio cuenta con planta baja y 4 niveles, más una terraza accesible, con un total de 25 unidades funcionales. El diseño prioriza la iluminación natural, la ventilación cruzada y el aprovechamiento de espacios exteriores.
+
+        Se ofrecen distintas tipologías de unidades, desde opciones compactas hasta dúplex amplios, adaptándose a diferentes necesidades.
+    </p>
+
+    <a href="Documentos/Planos/Plano1.pdf" download class="btn-pdf">
+        Descargar plano en PDF
+    </a>
+
+</div>
+
+<div class="map-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3290.9649515668384!2d-58.58485301348601!3d-34.42764537205564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4.1!3m3!1m2!1s0x95bca5a309ebf3d5%3A0xfb7fa28fea518c8b!2sMontes%20de%20Oca%20780%2C%20B1648%20Tigre%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1776817391423!5m2!1ses-419!2sar"></iframe>
+</div>
+
+<p style="margin-bottom: 200px;"></p>
+
+<!-- PROYECTO 2 -->
+<div class="gallery-section">
+
+    <h2>Proyecto 2 - Reformas</h2>
+
+    <div class="horizontal-gallery">
+        <img src="Documentos/Proyectos/Proyecto2/1.jpeg">
+        <img src="Documentos/Proyectos/Proyecto2/2.jpeg">
+        <img src="Documentos/Proyectos/Proyecto2/3.jpeg">>
+    </div>
+
+    <p class="project-text">
+        Reformas en Planta Baja
+    </p>
+
+    <a href="X.pdf" download class="btn-pdf">
+        Descargar plano en PDF
+    </a>
+
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d821.9039929957926!2d-58.49770733033259!3d-34.512618893239384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb13d33a9bfd9%3A0xc4319c68f3a3a9b7!2sRoque%20S%C3%A1enz%20Pe%C3%B1a%201966%2C%20B1636FIB%20Olivos%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1776820577679!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+
+<p style="margin-bottom: 200px;"></p>
+
+</div>
+
+
+<!-- PROYECTO 3 -->
+
+<div class="gallery-section">
+
+    <h2>Proyecto 3 - X</h2>
+
+    <div class="horizontal-gallery">
+        <img src="Documentos/Proyectos/Proyecto3/1.jpg">
+        <img src="Documentos/Proyectos/Proyecto3/2.jpg">
+        <img src="Documentos/Proyectos/Proyecto3/3.jpg">
+        <img src="Documentos/Proyectos/Proyecto3/4.jpg">
+        <img src="Documentos/Proyectos/Proyecto3/5.jpg">
+        <img src="Documentos/Proyectos/Proyecto3/6.jpg">
+        <img src="Documentos/Proyectos/Proyecto3/7.jpg">
+        <img src="Documentos/Proyectos/Proyecto3/8.jpg">
+        <img src="Documentos/Proyectos/Proyecto3/9.jpg">
+        <img src="Documentos/Proyectos/Proyecto3/10.jpg">
+        <img src="Documentos/Proyectos/Proyecto3/11.jpg">
+        <img src="Documentos/Proyectos/Proyecto3/12.jpg">
+    </div>
+
+    <p class="project-text">
+        X descripción del proyecto
+    </p>
+
+    <a href="X/X/X.pdf" download class="btn-pdf">
+        Descargar plano en PDF
+    </a>
+
+<!--
+<div class="map-container">
+    <iframe X </iframe>
+</div>
+-->
+
+<p style="margin-bottom: 200px;"></p>
+
+</div>
+
+
+
+</main>
+
+<!-- MODAL -->
+<div class="image-modal" id="imageModal">
+    <span class="close-btn" id="closeModal">&times;</span>
+    <span id="prev">&#10094;</span>
+    <span id="next">&#10095;</span>
+    <img id="modalImg">
+</div>
+
+<!-- FOOTER -->
+<footer>
+
+    <div>
+        <p><strong>Sistems Inc</strong></p>
+        <p>Innovación en proyectos de construcción moderna.</p>
+    </div>
+
+    <div>
+        <p><strong>Contacto</strong></p>
+        <p>constructora@sistemsinc.com</p>
+        <p>11 3674-5066</p>
+    </div>
+
+</footer>
+
+
+<!-- SCRIPT SLIDER -->
+
+<script>
+
+const modal = document.getElementById("imageModal");
+const modalImg = document.getElementById("modalImg");
+const images = document.querySelectorAll(".horizontal-gallery img");
+
+let currentIndex = 0;
+
+
+images.forEach((img, index) => {
+    img.addEventListener("click", () => {
+        modal.style.display = "flex";
+        modalImg.src = img.src;
+        currentIndex = index;
+    });
+});
+
+function closeModal(){
+    modal.style.display = "none";
+}
+
+document.getElementById("closeModal").addEventListener("click", closeModal);
+
+function showImage(index){
+    if(index < 0) currentIndex = images.length - 1;
+    else if(index >= images.length) currentIndex = 0;
+    else currentIndex = index;
+
+    modalImg.src = images[currentIndex].src;
+}
+
+document.getElementById("prev").onclick = () => showImage(currentIndex - 1);
+document.getElementById("next").onclick = () => showImage(currentIndex + 1);
+
+document.addEventListener("keydown", (e) => {
+    if(modal.style.display === "flex"){
+        if(e.key === "ArrowLeft") showImage(currentIndex - 1);
+        if(e.key === "ArrowRight") showImage(currentIndex + 1);
+        if(e.key === "Escape") closeModal();
+    }
+});
+
+
+/* FADE IN */
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add("show");
+        }
+    });
+}, {
+    threshold: 0.2
+});
+
+images.forEach(img => observer.observe(img));
+
+</script>
+
+</body>
+</html>
