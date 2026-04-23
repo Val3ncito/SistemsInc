@@ -31,5 +31,7 @@ al clickear en el teléfono o mail nos redirigira al respectivo programa rellena
 formulario para poder enviar mensajes a la empresa sin la necesidad de autenticarse, que seran dirigidos al mail empresarial
 <img width="1200" height="700" alt="image" src="https://github.com/user-attachments/assets/911fea62-20af-4d35-b900-e9e1af92cca4" />
 
+También para los usuarios administradores existe la página de inicio de sesión para poder cargar los proyectos de una manera más simplificada
+<img width="1200" height="700" alt="image" src="https://github.com/user-attachments/assets/6296521d-aa70-4a3d-8cd6-0cbcf36c9746" />
 
 
