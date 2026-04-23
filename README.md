@@ -34,4 +34,11 @@ formulario para poder enviar mensajes a la empresa sin la necesidad de autentica
 Y finalmente, también para los usuarios administradores existe la página de inicio de sesión para poder cargar los proyectos de una manera más simplificada
 <img width="1200" height="700" alt="image" src="https://github.com/user-attachments/assets/6296521d-aa70-4a3d-8cd6-0cbcf36c9746" />
 
+Se podrán agregar: 
+Titulo, Es obligatorio
+Descripción, No es obligatoria
+Imágenes, Puede ser una o varias
+Plano, En formato pdf, no es obligatorio
+Link, Tiene que ser de google maps del apartado de "Incorporar un mapa"
+<img width="1200" height="700" alt="image" src="https://github.com/user-attachments/assets/e9d9fe08-a7d4-41c3-85eb-126f613cfccd" />
 
