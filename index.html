@@ -3,15 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Sistems Inc - Proyectos de construcción moderna">
 <title>Inicio - Sistems Inc</title>
-<link rel="icon" href="Documentos/Varios/Logo.png" type="image/png">
+<link rel="icon" href="Logo.png">
 <link rel="stylesheet" href="styles.css">
 
 <style>
-
-
-
-/* ESPACIO PARA EL VIDEO */
 .hero{
     position:relative;
     height:100vh;
@@ -23,7 +20,6 @@
     overflow:hidden;
 }
 
-/* VIDEO DE FONDO */
 .hero video{
     position:absolute;
     top:0;
@@ -34,22 +30,18 @@
     z-index:-2;
 }
 
-/* OSCURO*/
 .overlay{
     position:absolute;
-    top:0;
-    left:0;
     width:100%;
     height:100%;
     background:rgba(0,0,0,0.5);
     z-index:-1;
 }
 
-/* TEXTO */
 .hero-content{
     max-width:700px;
     padding:20px;
-    margin-top:60px; 
+    margin-top:60px;
 }
 
 .hero-content h1{
@@ -59,12 +51,10 @@
 
 .hero-content p{
     font-size:18px;
-    line-height:1.6;
 }
 
-
 body.index header{
-    background:transparent !important;
+    background:transparent;
     position:absolute;
     width:100%;
     top:0;
@@ -72,44 +62,33 @@ body.index header{
     z-index:1000;
 }
 
-/* RESPONSIVE */
 @media(max-width:768px){
-
-    .hero-content h1{
-        font-size:28px;
-    }
-
+    .hero-content h1{ font-size:28px; }
 }
-
 </style>
 </head>
 
 <body class="index">
 
-<!-- HEADER -->
 <header>
-
     <div class="logo">
         <a href="index.html">
-            <img src="Documentos/Varios/Logo.png" alt="Logo Sistems Inc">
+            <img src="Logo.png" alt="Logo">
         </a>
     </div>
 
     <nav>
-        <a href="index.html" style="pointer-events:none;">Inicio</a>
-        <a href="Nuestros_Proyectos.html">Nuestros Proyectos</a>
+        <a href="#" style="pointer-events:none;">Inicio</a>
+        <a href="Nuestros_Proyectos.php">Nuestros Proyectos</a>
         <a href="Sobre_Nosotros.html">Sobre Nosotros</a>
         <a href="Contacto.html">Contacto</a>
+        <a href="Sesion.html">Iniciar Sesión</a>
     </nav>
-
 </header>
 
-<!-- MAIN -->
 <main>
-
     <section class="hero">
 
-        <!-- VIDEO -->
         <video autoplay muted loop>
             <source src="Documentos/Varios/VideoPresentación.mp4" type="video/mp4">
         </video>
@@ -118,17 +97,11 @@ body.index header{
 
         <div class="hero-content">
             <h1>Sistems Inc</h1>
-            <p>
-                Innovación en proyectos de construcción moderna
-            </p>
-            
-            <p>
-                lo que soñas lo convertimos en realidad.
-            </p>
+            <p>Innovación en construcción moderna</p>
+            <p>Lo que soñás lo convertimos en realidad</p>
         </div>
 
     </section>
-
 </main>
 
 </body>
