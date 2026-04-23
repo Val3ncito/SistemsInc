@@ -35,8 +35,8 @@ Y finalmente, también para los usuarios administradores existe la página de in
 <img width="1200" height="700" alt="image" src="https://github.com/user-attachments/assets/6296521d-aa70-4a3d-8cd6-0cbcf36c9746" />
 
 Se podrán agregar: 
-Titulo, Es obligatorio <b>
-Descripción, No es obligatoria <b>
+Titulo, Es obligatorio.
+Descripción, No es obligatoria.
 Imágenes, Puede ser una o varias
 Plano, En formato pdf, no es obligatorio
 Link, Tiene que ser de google maps del apartado de "Incorporar un mapa"
