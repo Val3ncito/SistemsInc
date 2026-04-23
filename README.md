@@ -26,9 +26,9 @@ Y podemos ver en google maps la ubicación de dicho proyecto y navegar librement
 Al ingresar en la página "Sobre Nosotros" podremos ver la historia de como fue evolucionando la empresa con el paso del tiempo
 <img width="1200" height="700" alt="image" src="https://github.com/user-attachments/assets/b62f556d-2801-497a-a65b-b1765d3b085f" />
 
-Y finalmente en la página de "Contacto" nos encontraremos con todos los datos judiciales de la empresa y sus métodos de comunicación
-al clickear en el teléfono o mail nos redirigira a dicho programa rellenando la información de forma automática, también cuenta con un
-formulario para poder enviar mensajes a la empresa sin la necesidad de autenticarse
+Y finalmente en la página de "Contacto" nos encontraremos con todos los datos judiciales de la empresa y sus métodos de comunicación,
+al clickear en el teléfono o mail nos redirigira al respectivo programa rellenando la información de forma automática, también cuenta con un
+formulario para poder enviar mensajes a la empresa sin la necesidad de autenticarse, que seran dirigidos al mail empresarial
 <img width="1200" height="700" alt="image" src="https://github.com/user-attachments/assets/911fea62-20af-4d35-b900-e9e1af92cca4" />
 
 
